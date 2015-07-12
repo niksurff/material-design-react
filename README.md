@@ -26,6 +26,7 @@ let coloredButton = <Button colored ripple>I am Colored</Button>;
 
 ## Developing
 *Building is cumbersome at the moment, sorry.*
+
 1. Clone the repo.
 2. `[sudo] npm install && gulp`
 3. Start a server in `examples` directory (ex. `python -m SimpleHTTPServer`)
