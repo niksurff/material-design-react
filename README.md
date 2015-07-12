@@ -13,8 +13,6 @@ This project attempts to provide [React](https://github.com/facebook/react) Comp
 ```javascript
 import React from 'react';
 import { Button } from 'material-design-react';
-// or
-// import Button from 'material-design-react/lib/button';
 
 let coloredButton = <Button colored ripple>I am Colored</Button>;
 ```
