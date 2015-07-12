@@ -11,9 +11,13 @@
     "url": "git+https://github.com/nikvm/material-design-react.git"
   },
   "keywords": [
-    "Material Design Lite",
-    "MDL",
-    "React"
+    "material",
+    "design",
+    "lite",
+    "material-design-lite",
+    "mdl",
+    "react",
+    "components"
   ],
   "author": "Niklas van Megen (https://github.com/nikvm)",
   "license": "MIT",
