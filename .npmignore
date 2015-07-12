@@ -1,2 +1,6 @@
 node_modules
 npm-debug.log
+examples
+gulp*
+webpack*
+debug
