@@ -1,6 +1,6 @@
 # Material Design React
 
-This project attempts to provide [React](https://github.com/facebook/react) Components wrapping Google's [Material Design Lite](https://github.com/google/material-design-lite) Components.
+This project attempts to provide [React](https://github.com/facebook/react) Components wrapping Google's [Material Design Lite](https://github.com/google/material-design-lite) (MDL) Components.
 
 **This is just a brain dump and very much work in progress. Also I am committed to pushing this forward. If you'd like to contribute have a first look at the code. If you want to use the library maybe come back at a later time. Thanks.**
 
