@@ -40,7 +40,7 @@ gulp.task("build-package", function(cb) {
       output: {
         path: LIB_OUTPUT_PATH,
         filename: '[name].js',
-        sourceMapFilename: path.join(__dirname, 'debug/[file].map'),
+        sourceMapFilename: 'debug/[file].map',
         library: LIB_NAME,
         libraryTarget: LIB_TARGET,
         pathinfo: true
@@ -73,7 +73,8 @@ gulp.task("build-examples", ['move-examples-index'], function(cb) {
       output: {
         path: EXAMPLES_OUTPUT_PATH,
         filename: '[name].js',
-        pathinfo: true
+        sourceMapFilename: 'debug/[file].map',
+        pathinfo: true,
       }
     });
 
