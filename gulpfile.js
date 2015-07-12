@@ -46,7 +46,7 @@ gulp.task("build-package", function(cb) {
         pathinfo: true
       },
       externals: [
-        {react: 'React'}
+        {react: 'react'}
       ]
     });
 
