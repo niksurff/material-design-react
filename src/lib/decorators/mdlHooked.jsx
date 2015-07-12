@@ -59,7 +59,7 @@ function prepareChildProps(props, config) {
     .filter((e) => upgradable && props[m] === true)
     .map((e) => `mdl-js-${block}`)
     .join('  ');
-  let modifierClassName = modifiers
+  let modifiersClassName = modifiers
     .filter((m) => props[m] === true)
     .map((m) => `mdl-${block}--${m}`)
     .join('  ');
@@ -70,7 +70,7 @@ function prepareChildProps(props, config) {
     blockJSClassName,
     rippleClassName,
     jsExtrasClassName,
-    modifierClassName,
+    modifiersClassName,
     propsClassName
   ].join('  ');
 
