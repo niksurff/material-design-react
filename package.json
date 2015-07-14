@@ -1,6 +1,6 @@
 {
   "name": "material-design-react",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "An implementation of Material Design Lite in React",
   "main": "lib/index.js",
   "scripts": {
