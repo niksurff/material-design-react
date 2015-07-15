@@ -1,36 +1,79 @@
-# Material Design React
+# Material Design React (MDR)
 
-A pragmatic [React](https://github.com/facebook/react) implementation of [Material Design Lite](https://github.com/google/material-design-lite) (MDL) Components.
+:warning: Work in progress. Updates rolling in every other day.
 
-**This is just a brain dump and very much work in progress. Also I am committed to pushing this forward. If you'd like to contribute have a first look at the code. If you want to use the library maybe come back at a later time. Thanks.**
+A *pragmatic* [React](https://github.com/facebook/react) implementation of [Material Design Lite](https://github.com/google/material-design-lite) (MDL).
 
 
-## Installation
+## Contents
 
-`npm install --save material-design-react`
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Components](#components)
+- [Histroy](#history)
+- [Credits](#credits)
+- [License](#license)
 
-## Usage
+
+## Introduction
+
+*Pragmatic* &ndash; because if you know how to use MDL you already know how to use MDR.
+
+Most MDL BEM **blocks and elements translate to MDR Components** and **modifiers translate to boolean properties**. In addition Components may have added some extra sugar.
+
+### An Example
+
+Given MDL markup:
+
+```html
+<button class="mdl-button mdl-js-button mdl-button--fab">FAB BUTTON</button>
+```
+
+ becomes:
+
+ ```html
+<Button fab>FAB BUTTON</Button>
+ ```
+
+ or &ndash; considering that
+      *fab*, *miniFab*, *icon* and *raised* are mutually exclusive &ndash; we can use the display property:
+
+```html
+<Button display="fab">FAB BUTTON</Button>
+```
+
+
+## Getting Started
+
+
+### Installation
+
+npm:
+```bash
+npm install --save material-design-react
+```
+
+*Please file an issue if you need additional means of installation.*
+
+
+### Usage
+
 ```javascript
 import React from 'react';
 import { Button } from 'material-design-react';
+// or
+import Button from 'material-design-react/lib/button';
+// or
+var MDR = require('material-design-react');
+var Button = MDR.Button;
 
-let coloredButton = <Button colored ripple>I am Colored</Button>;
+let coloredButton = <Button colored ripple>I am colored</Button>;
 ```
 
 ## Contributing
 
-*Not just yet, sorry*
-
-
-## Developing
-*Building is cumbersome at the moment, sorry.*
-
-1. Clone the repo.
-2. `[sudo] npm install && gulp`
-3. Start a server in `examples` directory (ex. `python -m SimpleHTTPServer`)
-4. Make some changes
-5. `gulp clean && gulp`
-6. Rinse and repeat
+*Coming soon*
 
 
 ## History
@@ -38,15 +81,25 @@ let coloredButton = <Button colored ripple>I am Colored</Button>;
 Have a look at the [changelog](CHANGELOG.md).
 
 
+## Components
+
+*Links point to the components readme.*
+
+
+- [x] [Button](src/buttton/README.md)
+
+
 ## Credits
 
-* Google's [Material Design Lite](https://github.com/google/material-design-lite)
-* Facebook's [React](https://github.com/facebook/react)
-* Yan Foto's Article [React Components with Material Design Lite](http://quaintous.com/2015/07/09/react-components-with-mdl/)
-* Zeno Rocha's [README template](https://gist.github.com/zenorocha/4526327)
-* The [npm dependencies](package.json) authors
-* Everyone I forgot
+- [Contributors](https://github.com/nikvm/material-design-react/graphs/contributors) for contributing
+- [Google](https://github.com/google) for [Material Design Lite](https://github.com/google/material-design-lite)
+- [Facebook](https://github.com/facebook) for [React](https://github.com/facebook/react)
+- [Yan Foto](https://github.com/yan-foto) for his article [React Components with Material Design Lite](http://quaintous.com/2015/07/09/react-components-with-mdl/)
+- [Zeno Rocha](https://github.com/zenorocha) for his [README template](https://gist.github.com/zenorocha/4526327)
+- NPM module authors for [this project's dependencies](package.json)
+
+*Get in contact if you think you belong here.*
 
 ## License
 
-MIT
+This project is licensed under the terms of the [MIT](LICENSE.md) license.
