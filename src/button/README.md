@@ -1,15 +1,8 @@
 # Button
 
 ## Usage
-Include the Material Design Lite CSS and JavaScript files in each HTML page in your project.  
-More info: http://www.getmdl.io/started/index.html#download
-```html
-<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css" />
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
-```
-In your project's JS files import the components you need.
+
 ```javascript
-import React from 'react';
 // import { Button } from 'material-design-react';
 import Button from 'material-design-react/lib/button';
 
