@@ -83,10 +83,9 @@ Have a look at the [changelog](CHANGELOG.md).
 
 ## Components
 
-*Links point to the components readme.*
+*Links point to a component's readme.*
 
-
-- [x] [Button](src/buttton/README.md)
+- [x] [Button](src/button/README.md)
 
 
 ## Credits
