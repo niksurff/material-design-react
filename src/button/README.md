@@ -1,5 +1,8 @@
 # Button
 
+http://www.getmdl.io/components/index.html#buttons-section
+
+
 ## Usage
 
 ```javascript
@@ -21,10 +24,6 @@ display | one of: raised, fab, miniFab, icon | *See above* | Mutually exclusive 
 colored | bool | Add background color | Mutually exclusive with accent
 accent | bool | Add accent background color  | Mutually exclusive with colored
 disabled | bool | Disable button | Adds `disabled` prop to `<button>`
-
-## MDL Docs
-
-http://www.getmdl.io/components/index.html#buttons-section
 
 
 ## Notes
