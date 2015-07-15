@@ -27,4 +27,4 @@ disabled | bool | Disable button | Adds `disabled` prop to `<button>`
 
 
 ## Notes
--
+*none*
