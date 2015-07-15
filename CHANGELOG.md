@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.6
+
+* Adds Button readme
+* Updates readme
+* Adds license file
+
 ## v0.1.5
 
 * restructure
