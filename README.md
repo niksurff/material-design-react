@@ -97,8 +97,8 @@ Have a look at the [changelog](CHANGELOG.md).
 *Links point to a component's readme.*
 
 - [x] [Button](src/buttton/README.md)
-- [ ] Card
-  - [ ] CarTitle
+- [ ] [Card](src/card/README.md)
+  - [x] [CardTitle](src/card-title/README.md)
   - [ ] CardTitleText
   - [ ] CardSubtitleText
   - [ ] CardSupportingText
