@@ -1,7 +1,7 @@
 # Button
 
 ## Usage
-```
+```javascript
 // import { Button } from 'material-design-react';
 import Button from 'material-design-react/lib/button';
 
