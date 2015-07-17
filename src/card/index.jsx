@@ -1,4 +1,5 @@
 import React from 'react';
+import CardMenu from './menu';
 import CardMedia from './media';
 import CardTitle from './title';
 import CardActions from './actions';
@@ -32,5 +33,6 @@ Card.SubtitleText = CardSubtitleText;
 Card.SupportingText = CardSupportingText;
 Card.Media = CardMedia;
 Card.Actions = CardActions;
+Card.Menu = CardMenu;
 
 export default Card;

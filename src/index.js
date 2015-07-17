@@ -1,5 +1,6 @@
 import Button from './button';
 import Card from './card';
+import CardMenu from './card/menu';
 import CardMedia from './card/media';
 import CardTitle from './card/title';
 import CardActions from './card/actions';
@@ -15,5 +16,6 @@ export default {
   CardSubtitleText,
   CardSupportingText,
   CardMedia,
-  CardActions
+  CardActions,
+  CardMenu
 };

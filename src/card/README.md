@@ -30,6 +30,7 @@ shadow | on of: 2, 3, 4, 6, 8 | undefined | Assigns shadow with variable depths 
 * [SupportingText](./supporting-text/README.md)
 * [Media](./media/README.md)
 * [Actions](./actions/README.md)
+* [Menu](./menu/README.md)
 
 
 ## Notes
