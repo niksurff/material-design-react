@@ -100,7 +100,7 @@ Have a look at the [changelog](CHANGELOG.md).
 - [ ] [Card](src/card/README.md)
   - [x] [CardTitle](src/card/title/README.md)
   - [x] [CardTitleText](src/card/title-text/README.md )
-  - [ ] CardSubtitleText
+  - [x] [CardSubtitleText](src/card/subtitle-text/README.md)
   - [x] CardMedia
   - [ ] CardSupportingText
   - [ ] CardActions

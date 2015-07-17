@@ -3,6 +3,7 @@ import CardMedia from './media';
 import CardTitle from './title';
 import CardTitleText from './title-text';
 import mdlHook from '../decorator/mdl-hook';
+import CardSubtitleText from './subtitle-text';
 
 @mdlHook({
   displayName: 'MDRCard',
@@ -25,6 +26,7 @@ class Card extends React.Component {
 // Children
 Card.Title = CardTitle;
 Card.TitleText = CardTitleText;
+Card.SubtitleText = CardSubtitleText;
 Card.Media = CardMedia;
 
 export default Card;
