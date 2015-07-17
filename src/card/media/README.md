@@ -11,7 +11,7 @@ import Card from 'material-design-react/lib/card';
 let myCard = (
   <Card shadow="2">
     {/* ... */}
-    <Card.Media border>
+    <Card.Media>
       {/* ... */}
     </Card.Media>
     {/* ... */}
