@@ -1,9 +1,6 @@
 var gulp = require('gulp');
-var path = require('path');
 var babel = require('gulp-babel');
-var gutil = require("gulp-util");
 var del = require('del');
-var objectAssign = require('object-assign')
 var eslint = require('gulp-eslint');
 
 // CONSTANTS =======================================================================
