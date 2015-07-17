@@ -2,7 +2,7 @@ import React from 'react';
 import prepareProps from '../util/prepare-props';
 
 export default function mdlHook(config) {
-  let {displayName, blockClassName, modifiers} = config;
+  let {displayName, blockClassName, modifiers = []} = config;
   let propTypes = modifiers
     .reduce((acc, cur) => {
       acc[cur.prop] = cur.type;
