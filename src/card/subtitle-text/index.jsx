@@ -8,7 +8,7 @@ import mdlHook from '../../decorator/mdl-hook';
 class CardSubtitleText extends React.Component {
 
   render() {
-    return <h2 {...this.props} />;
+    return <div {...this.props} />;
   }
 }
 
