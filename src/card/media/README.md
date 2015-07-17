@@ -16,7 +16,7 @@ let myCard = (
     </Card.Media>
     {/* ... */}
   </Card>
-  )
+);
 ```
 
 You may also import and use `CardMedia` directly.

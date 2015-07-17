@@ -17,7 +17,7 @@ let myCard = (
     </Card.Title>
     {/* ... */}
   </Card>
-  )
+);
 ```
 
 You may also import and use `CardTitleText` directly.

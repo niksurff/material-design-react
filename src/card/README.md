@@ -13,7 +13,7 @@ let myCard = (
   <Card shadow="2">
     {/* ... */}
   </Card>
-  )
+);
 ```
 
 ## Properties
