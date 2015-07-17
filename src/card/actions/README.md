@@ -11,7 +11,7 @@ import Card from 'material-design-react/lib/card';
 let myCard = (
   <Card>
     {/* ... */}
-    <Card.Actions>
+    <Card.Actions border>
       Action!
     </Card.Actions>
     {/* ... */}
