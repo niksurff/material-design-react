@@ -9,7 +9,7 @@ var eslint = require('gulp-eslint');
 gulp.task('default', ['build']);
 
 gulp.task('clean', function(cb) {
-  del(['./lib'], cb);
+  del(['./build'], cb);
 });
 
 gulp.task('build', ['clean'], function () {
@@ -18,5 +18,5 @@ gulp.task('build', ['clean'], function () {
         .pipe(eslint.format())
         .pipe(eslint.failAfterError())
         .pipe(babel())
-        .pipe(gulp.dest('lib/'));
+        .pipe(gulp.dest('build/'));
 });
