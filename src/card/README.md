@@ -11,7 +11,22 @@ import Card from 'material-design-react/lib/card';
 
 let myCard = (
   <Card shadow="2">
-    {/* ... */}
+    <Card.Title border>
+      <Card.TitleText>Look, a Card!</Card.TitleText>
+      <Card.SubtitleText>It is, indeed.</CardSubtitleText>
+    </Card.Title>
+
+    <Card.Media>
+      {/* ... */}
+    </Card.Media>
+
+    <Card.Actions>
+      <Button ripple>Do it</Button>
+    </Card.Actions>
+
+    <Card.Menu>
+      <Button icon className="material-icons">add</Button>
+    </Card.Menu>
   </Card>
 );
 ```
