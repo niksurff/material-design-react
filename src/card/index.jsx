@@ -1,4 +1,5 @@
 import React from 'react';
+import CardMedia from './media';
 import CardTitle from './title';
 import CardTitleText from './title-text';
 import mdlHook from '../decorator/mdl-hook';
@@ -24,5 +25,6 @@ class Card extends React.Component {
 // Children
 Card.Title = CardTitle;
 Card.TitleText = CardTitleText;
+Card.Media = CardMedia;
 
 export default Card;
