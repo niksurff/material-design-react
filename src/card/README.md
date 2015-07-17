@@ -26,9 +26,10 @@ shadow | on of: 2, 3, 4, 6, 8 | undefined | Assigns shadow with variable depths 
 
 * [Title](./title/README.md)
 * [TitleText](./title-text/README.md)
-* [Media](./media/README.md)
 * [SubtitleText](./subtitle-text/README.md)
 * [SupportingText](./supporting-text/README.md)
+* [Media](./media/README.md)
+* [Actions](./actions/README.md)
 
 
 ## Notes

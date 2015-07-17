@@ -1,6 +1,7 @@
 import React from 'react';
 import CardMedia from './media';
 import CardTitle from './title';
+import CardActions from './actions';
 import CardTitleText from './title-text';
 import mdlHook from '../decorator/mdl-hook';
 import CardSubtitleText from './subtitle-text';
@@ -30,5 +31,6 @@ Card.TitleText = CardTitleText;
 Card.SubtitleText = CardSubtitleText;
 Card.SupportingText = CardSupportingText;
 Card.Media = CardMedia;
+Card.Actions = CardActions;
 
 export default Card;

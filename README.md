@@ -103,7 +103,7 @@ Have a look at the [changelog](CHANGELOG.md).
   - [x] [CardSubtitleText](src/card/subtitle-text/README.md)
   - [x] [CardMedia](src/card/media/README.md)
   - [x] [CardSupportingText](src/card/supporting-text/README.md)
-  - [ ] CardActions
+  - [x] [CardActions](src/card/actions/README.md)
 - ...*coming*
 
 
