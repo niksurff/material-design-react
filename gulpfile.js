@@ -6,13 +6,13 @@ var eslint = require('gulp-eslint');
 // CONSTANTS =======================================================================
 
 // TASKS ======================================================================
-gulp.task('default', ['build-modules']);
+gulp.task('default', ['build']);
 
 gulp.task('clean', function(cb) {
   del(['./lib'], cb);
 });
 
-gulp.task('build-modules', ['clean'], function () {
+gulp.task('build', ['clean'], function () {
     return gulp.src('src/**/*.js?(x)')
         .pipe(eslint())
         .pipe(eslint.format())
