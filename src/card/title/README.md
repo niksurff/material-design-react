@@ -22,7 +22,7 @@ You may also import and use `CardTitle` directly.
 
 ```javascript
 // import { CardTitle } from 'material-design-react';
-import CardTitle from 'material-design-react/lib/card-title';
+import CardTitle from 'material-design-react/lib/card/title';
 
 let myCardTitle = (
   <CardTitle>
@@ -31,12 +31,12 @@ let myCardTitle = (
 );
 ```
 
+
 ## Properties
-Property | Type | Effect | Remarks
--------- | ------ | ------ | -------
-border | bool | Adds border to section | -
 
-
+Property | Type | Default | Effect | Remarks
+-------- | -----| ------- | ------ | -------
+border | bool | undefined | Adds border to section | -
 
 
 ## Notes
