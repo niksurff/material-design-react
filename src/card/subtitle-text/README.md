@@ -10,9 +10,14 @@ import Card from 'material-design-react/lib/card';
 
 let myCard = (
   <Card shadow="2">
-    <Card.SubtitleText border>
-      {/* ... */}
-    </Card.SubtitleText>
+    <Card.Title>
+      <Card.TitleText>
+        A Title
+      </Card.TitleText>
+      <Card.SubtitleText border>
+        A subtitle
+      </Card.SubtitleText>
+    </Card.Title>
     {/* ... */}
   </Card>
 );
