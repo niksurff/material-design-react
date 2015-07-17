@@ -3,14 +3,7 @@ import mdlHook from '../../decorator/mdl-hook';
 
 @mdlHook({
   displayName: 'MDRCardTitleText',
-  blockClassName: 'mdl-card__title-text',
-  modifiers: [
-    {
-      prop: 'border',
-      className: 'mdl-card--border',
-      type: React.PropTypes.bool
-    }
-  ]
+  blockClassName: 'mdl-card__title-text'
 })
 class CardTitleText extends React.Component {
   static propTypes = {

@@ -38,7 +38,6 @@ let myCardTitleText = (
 
 Property | Type | Default | Effect | Remarks
 -------- | ---- | ------- | ------ | -------
-border | bool | undefined | Adds border to section | -
 level | one of: 1, 2, 3, 4, 5, 6 | 1 | Sets heading level | Defines DOM element `<h1>` through `<h2>`
 
 
