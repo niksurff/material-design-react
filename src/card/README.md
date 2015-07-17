@@ -18,15 +18,14 @@ let myCard = (
 
 ## Properties
 
-### Card
-
-Property | Type | Effect | Remarks
--------- | ------ | ------ | -------
-shadow | on of: 2, 3, 4, 6, 8 | Assigns shadow with variable depths | Depths 5 and 7 don't exist
+Property | Type | Default | Effect | Remarks
+-------- | -----| ------- | ------ | -------
+shadow | on of: 2, 3, 4, 6, 8 | undefined | Assigns shadow with variable depths | Depths 5 and 7 don't exist
 
 ## Children
 
-* [Title](../card-title/README.md)
+* [Title](./title/README.md)
+* [TitleText](./title-text/README.md)
 
 ## Notes
 *none*

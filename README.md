@@ -96,12 +96,14 @@ Have a look at the [changelog](CHANGELOG.md).
 
 *Links point to a component's readme.*
 
-- [x] [Button](src/buttton/README.md)
+- [x] [Button](src/button/README.md)
 - [ ] [Card](src/card/README.md)
-  - [x] [CardTitle](src/card-title/README.md)
-  - [ ] CardTitleText
+  - [x] [CardTitle](src/card/title/README.md)
+  - [x] [CardTitleText](src/card/title-text/README.md )
   - [ ] CardSubtitleText
+  - [ ] CardMedia
   - [ ] CardSupportingText
+  - [ ] CardActions
 - ...*coming*
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
+import CardTitle from './title';
+import CardTitleText from './title-text';
 import mdlHook from '../decorator/mdl-hook';
-import CardTitle from '../card-title';
 
 @mdlHook({
   displayName: 'MDRCard',
@@ -22,5 +23,6 @@ class Card extends React.Component {
 
 // Children
 Card.Title = CardTitle;
+Card.TitleText = CardTitleText;
 
 export default Card;
