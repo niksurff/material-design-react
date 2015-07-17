@@ -39,5 +39,10 @@ Property | Type | Default | Effect | Remarks
 border | bool | undefined | Adds border to section | -
 
 
+## Parent
+
+[Card](../README.md)
+
+
 ## Notes
 *none*

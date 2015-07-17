@@ -38,5 +38,10 @@ let myCardMedia = (
 *none*
 
 
+## Parent
+
+[Card](../README.md)
+
+
 ## Notes
 *none*
