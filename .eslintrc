@@ -9,13 +9,16 @@
   "rules": {
     "strict": 0,
     "quotes": [2, "single", "avoid-escape"],
+    "curly": 0,
+    "no-underscore-dangle": 0,
+    "no-use-before-define": 0,
 
     "react/display-name": 1,
     "react/jsx-boolean-value": 1,
     "react/jsx-no-undef": 1,
     "react/jsx-quotes": 1,
-    "react/jsx-sort-prop-types": 1,
-    "react/jsx-sort-props": 1,
+    "react/jsx-sort-prop-types": 0,
+    "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
     "react/no-danger": 1,
