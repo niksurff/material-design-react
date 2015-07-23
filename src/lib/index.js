@@ -1,6 +1,6 @@
 import makeClassName from './make-class-name';
 import prepareProps from './prepare-props';
-import mdlHook from './mdlHook';
+import mdlHook from './mdl-hook';
 
 export default {
   makeClassName,
