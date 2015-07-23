@@ -74,7 +74,7 @@ In your project's JS files import the components you need.
 import React from 'react';
 import { Button } from 'material-design-react';
 // or
-import Button from 'material-design-react/lib/button';
+import Button from 'material-design-react/button';
 // or
 var MDR = require('material-design-react');
 var Button = MDR.Button;
