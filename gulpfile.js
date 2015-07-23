@@ -2,17 +2,19 @@ var gulp = require('gulp');
 var gutil = require('gulp-util')
 var babel = require('gulp-babel');
 var del = require('del');
+var fs = require('fs');
 var eslint = require('gulp-eslint');
 var webpack = require('webpack');
 var webpackConfig = require('./webpack.config.js');
 var WebpackDevServer = require("webpack-dev-server");
+var infoColor = gutil.colors.blue;
 
 // DISTRIBUTION
 
 gulp.task('default', ['build']);
 
 // todo update .gitignore
-gulp.task('build', function () {
+gulp.task('build', ['update-gitignore'], function() {
     return gulp.src('src/**/*.js?(x)')
         .pipe(eslint())
         .pipe(eslint.format())
@@ -20,6 +22,37 @@ gulp.task('build', function () {
         .pipe(babel())
         .pipe(gulp.dest('./'));
 });
+
+// Searches src/ for files
+// that are not ignored when built into project root
+// and adds them to .gitignore
+gulp.task('update-gitignore', function(cb) {
+  var ignored = fs.readFileSync('./.gitignore')
+    .toString()
+    .split("\n")
+    .filter(function noEmptyString(string) {
+      return string.length > 0;
+    });
+  var shouldIgnore = fs.readdirSync('./src')
+    .map(function prefixSlash(file) {
+      return '/' + file;
+    })
+    .filter(function notIgnoredYet(file) {
+      return ignored.indexOf(file) === -1;
+    });
+  var willIgnore = ignored
+    .concat(shouldIgnore)
+    // keep it clean?
+    .sort()
+    // empty string adds new line at end of file
+    .concat('');
+
+  gutil.log('Adding files:', infoColor(shouldIgnore.join(', ')));
+
+  fs.writeFileSync('./.gitignore', willIgnore.join('\n'))
+
+  cb();
+})
 
 
 // DEVELOPMENT

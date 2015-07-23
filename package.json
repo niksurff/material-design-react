@@ -2,7 +2,7 @@
   "name": "material-design-react",
   "version": "0.1.6",
   "description": "An implementation of Material Design Lite in React",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
