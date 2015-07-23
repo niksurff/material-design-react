@@ -7,7 +7,7 @@ http://www.getmdl.io/components/index.html#buttons-section
 
 ```javascript
 // import { Button } from 'material-design-react';
-import Button from 'material-design-react/lib/button';
+import Button from 'material-design-react/button';
 
 let myButton = <Button display="raised" ripple accent>Label</Button>;
 ```
