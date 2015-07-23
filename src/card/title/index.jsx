@@ -1,5 +1,5 @@
 import React from 'react';
-import mdlHook from '../../decorator/mdl-hook';
+import mdlHook from '../../lib/mdl-hook';
 
 @mdlHook({
   displayName: 'MDRCardTitle',

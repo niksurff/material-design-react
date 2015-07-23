@@ -6,7 +6,7 @@ http://www.getmdl.io/components/index.html#cards-section
 ## Usage
 
 ```javascript
-import Card from 'material-design-react/lib/card';
+import Card from 'material-design-react/card';
 
 let myCard = (
   <Card>
@@ -23,7 +23,7 @@ You may also import and use `CardActions` directly.
 
 ```javascript
 // import { CardActions } from 'material-design-react';
-import CardActions from 'material-design-react/lib/card/actions';
+import CardActions from 'material-design-react/card/actions';
 
 let myCardActions = (
   <CardActions>

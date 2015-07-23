@@ -7,7 +7,7 @@ http://www.getmdl.io/components/index.html#cards-section
 
 ```javascript
 // import { Card } from 'material-design-react';
-import Card from 'material-design-react/lib/card';
+import Card from 'material-design-react/card';
 
 let myCard = (
   <Card shadow="2">

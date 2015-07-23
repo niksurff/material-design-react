@@ -6,7 +6,7 @@ http://www.getmdl.io/components/index.html#cards-section
 ## Usage
 
 ```javascript
-import Card from 'material-design-react/lib/card';
+import Card from 'material-design-react/card';
 
 let myCard = (
   <Card shadow="2">
@@ -23,7 +23,7 @@ You may also import and use `CardMenu` directly.
 
 ```javascript
 // import { CardMenu } from 'material-design-react';
-import CardMenu from 'material-design-react/lib/card/menu';
+import CardMenu from 'material-design-react/card/menu';
 
 let myCardMenu = (
   <CardMenu>

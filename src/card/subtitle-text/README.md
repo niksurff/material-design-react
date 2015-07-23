@@ -6,7 +6,7 @@ http://www.getmdl.io/components/index.html#cards-section
 ## Usage
 
 ```javascript
-import Card from 'material-design-react/lib/card';
+import Card from 'material-design-react/card';
 
 let myCard = (
   <Card shadow="2">
@@ -27,7 +27,7 @@ You may also import and use `CardSubtitleText` directly.
 
 ```javascript
 // import { CardSubtitleText } from 'material-design-react';
-import CardSubtitleText from 'material-design-react/lib/card/subtitle-text';
+import CardSubtitleText from 'material-design-react/card/subtitle-text';
 
 let myCardSubtitleText = (
   <CardSubtitleText>

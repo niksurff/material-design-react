@@ -1,14 +1,14 @@
 import React from 'react';
 import {
   Button,
-  // Card,
-  // CardTitle,
-  // CardTitleText,
-  // CardSubtitleText,
-  // CardSupportingText,
-  // CardMedia,
-  // CardMenu,
-  // CardActions
+  Card,
+  CardTitle,
+  CardTitleText,
+  CardSubtitleText,
+  CardSupportingText,
+  CardMedia,
+  CardMenu,
+  CardActions
 } from '../index'; // material-design-react
 
 class Examples extends React.Component {
@@ -34,7 +34,7 @@ class App extends React.Component {
         <Button fab colored ripple><i className={'material-icons'}>add</i></Button>
         <Button icon ripple><i className={'material-icons'}>add</i></Button>
         <Button className="example-custom-red">Custom style</Button>
-{/*        <Card shadow="3">
+        <Card shadow="3">
           <Card.Title>
             <Card.TitleText border>
               Card.TitleText
@@ -75,7 +75,6 @@ class App extends React.Component {
           actions={[<Button colored>GO!</Button>]}
           actionsBorder
           shadow="8" />
-*/}
       </Examples>
     );
   }

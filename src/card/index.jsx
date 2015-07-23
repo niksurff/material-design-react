@@ -1,5 +1,5 @@
 import React from 'react';
-import mdlHook from '../decorator/mdl-hook';
+import mdlHook from '../lib/mdl-hook';
 import CardMenu from './menu';
 import CardMedia from './media';
 import CardTitle from './title';
