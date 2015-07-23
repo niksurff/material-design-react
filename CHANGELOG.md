@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.1.7
+* Import Components from project root like `import Button from 'material-design-react/button`
+
 ## v0.1.6
 
 * Adds Button readme
