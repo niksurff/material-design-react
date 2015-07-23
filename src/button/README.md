@@ -14,7 +14,7 @@ let myButton = <Button display="raised" ripple accent>Label</Button>;
 
 ## Properties
 Property | Type | Default | Effect | Remarks
--------- | ------ | ------ | -------
+-------- | ---- | ------- | ------ | -------
 ripple | bool | undefined | Add ripple effect | JS effect
 raised | bool | undefined | Add shadow | Mutually exclusive with fab, miniFab, icon
 fab | bool | undefined | Make floating action button | Mutually exclusive with raised, miniFab, icon
