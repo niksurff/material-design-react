@@ -26,8 +26,8 @@ class App extends React.Component {
   render() {
     return (
       <Examples>
-        <Button raised colored>standard</Button>
-        <Button disabled>diabled</Button>
+        <Button raised colored ripple>standard</Button>
+        <Button disabled>disabled</Button>
         <Button colored raised>raised colored</Button>
         <Button raised ripple>raised ripple</Button>
         <Button display="raised">use prop display="raised"</Button>
