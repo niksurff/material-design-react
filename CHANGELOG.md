@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.0
+* Adds `Card` Components
+
 ## v0.1.7
 * Import Components from project root like `import Button from 'material-design-react/button`
 
@@ -13,11 +16,9 @@
 
 * restructure
 
-
 ## v0.1.2
 
 * Makes npm package usable
-
 
 ## v0.1.0
 
