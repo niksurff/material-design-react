@@ -1,4 +1,10 @@
-export default function mdlClassName(props, config) {
+/**
+ * Return className with mdl css classes and className from props
+ * @param  {Object} props   props defined on Component
+ * @param  {Object} config  config for className creation
+ * @return {String}         the final className
+ */
+export default function makeClassName(props, config) {
   let {blockClassName, modifierClassNameFns} = config;
 
   let propClassNameFn = (prop) => modifierClassNameFns[prop];

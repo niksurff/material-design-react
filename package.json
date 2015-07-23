@@ -2,7 +2,7 @@
   "name": "material-design-react",
   "version": "0.1.6",
   "description": "An implementation of Material Design Lite in React",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/nikvm/material-design-react#readme",
   "dependencies": {
-    "is-string": "^1.0.4",
     "omit": "^1.0.1",
     "react": "^0.13.3"
   },
@@ -34,7 +33,7 @@
     "babel": "^5.6.14",
     "babel-core": "^5.6.17",
     "babel-eslint": "^3.1.23",
-    "babel-loader": "^5.3.1",
+    "babel-loader": "^5.3.2",
     "del": "^1.2.0",
     "eslint": "^0.24.1",
     "eslint-plugin-react": "^2.7.0",
@@ -42,7 +41,7 @@
     "gulp-babel": "^5.1.0",
     "gulp-eslint": "^0.15.0",
     "gulp-util": "^3.0.6",
-    "object-assign": "^3.0.0",
-    "webpack": "^1.10.1"
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1"
   }
 }

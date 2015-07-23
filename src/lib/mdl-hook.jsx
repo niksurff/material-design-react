@@ -1,8 +1,15 @@
 import React from 'react';
-import prepareProps from '../util/prepare-props';
+import prepareProps from './prepare-props';
 
+/**
+ * Returns a decorator rendering Target with mdl className,
+ * handles lifecycle hooks
+ * @param  {Object} config   The config object
+ * @return {Function}        The decorator function
+ */
 export default function mdlHook(config) {
   let {displayName, blockClassName, modifiers} = config;
+
   let propTypes = modifiers
     .reduce((acc, cur) => {
       acc[cur.prop] = cur.type;
@@ -16,12 +23,14 @@ export default function mdlHook(config) {
       }
       return acc;
     }, {});
+
   let modifierClassNameFns = modifiers
     .reduce((acc, cur) => {
       let {className, classNameFn} = cur;
       acc[cur.prop] = className ? () => className : classNameFn;
       return acc;
     }, {});
+
 
   return function decorator(Target) {
 
