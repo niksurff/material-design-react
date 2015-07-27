@@ -1,5 +1,4 @@
 import React from 'react';
-import paramCase from 'param-case';
 import mdlHook from '../lib/mdl-hook';
 
 @mdlHook({
