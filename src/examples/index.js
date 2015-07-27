@@ -33,6 +33,8 @@ class App extends React.Component {
         <Button display="raised">use prop display="raised"</Button>
         <Button fab colored ripple><i className={'material-icons'}>add</i></Button>
         <Button icon ripple><i className={'material-icons'}>add</i></Button>
+        <Button display="miniFab" colored><i className={'material-icons'}>add</i></Button>
+        <Button miniFab colored><i className={'material-icons'}>add</i></Button>
         <Button className="example-custom-red">Custom style</Button>
         <Card shadow="3">
           <Card.Title>
