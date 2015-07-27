@@ -20,8 +20,12 @@ let myCard = (
       {/* ... */}
     </Card.Media>
 
-    <Card.Actions>
-      <Button ripple>Do it</Button>
+    <Card.SupportingText>
+      Some text to support the obvious.
+    </Card.SupportingText>
+
+    <Card.Actions border>
+      <Button ripple>Do it!</Button>
     </Card.Actions>
 
     <Card.Menu>
@@ -40,6 +44,7 @@ let myCard = (
     title="Look, a Card!"
     titleLevel="3"
     subtitle="It is, indeed."
+    supporting="Some text to support the obvious."
     actions={[<Button>Act on it.</Button>, <Button accent>Do it!</Button>]}
     actionsBorder />
 );
@@ -75,6 +80,7 @@ menu | node | undefined | Includes provided node in menu container | Usually a m
 ## Notes
 
 When using `Card` with props the order in which children are rendered is as follows:
+
 1. `title`
 2. `subtitle`
 3. `supporting`
