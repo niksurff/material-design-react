@@ -50,7 +50,7 @@ let myCard = (
 
 Property | Type | Default | Effect | Remarks
 -------- | -----| ------- | ------ | -------
-shadow | one of: 2, 3, 4, 6, 8 | undefined | Assigns shadow with variable depths | Depths 5 and 7 don't exist
+shadow | one of: 2, 3, 4, 6, 8, 16 | undefined | Assigns shadow with variable depths | Depths 5 and 7 don't exist
 title | node | undefined | Applies provided nodes as heading | -
 titleLevel | one of: 1, 2, 3, 4, 5, 6 | 1 | Sets title's heading level | Sets html elements `<h1>` through `<h6>`
 titleBorder | bool| undefined | Gives title container a border | -

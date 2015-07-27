@@ -14,7 +14,7 @@ import CardSupportingText from './supporting-text';
   modifiers: [
     {
       prop: 'shadow',
-      type: React.PropTypes.oneOf([2, 3, 4, 6, 8]),
+      type: React.PropTypes.oneOf([2, 3, 4, 6, 8, 16]),
       classNameFn: (val) => `mdl-shadow--${val}dp`
     }
   ]
