@@ -6,10 +6,15 @@ import mdlHook from '../lib/mdl-hook';
   blockClassName: 'mdl-button mdl-js-button',
   modifiers: [
     {
-      prop: 'ripple',
+      prop: 'rippleEffect',
       className: 'mdl-js-ripple-effect',
       type: React.PropTypes.bool
       // default: false
+    },
+    {
+      prop: 'ripple',
+      className: 'mdl-js-ripple-effect',
+      type: React.PropTypes.bool
     },
     {
       prop: 'raised',
