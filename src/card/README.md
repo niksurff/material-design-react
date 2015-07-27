@@ -55,16 +55,16 @@ let myCard = (
 
 Property | Type | Default | Effect | Remarks
 -------- | -----| ------- | ------ | -------
-shadow | one of: 2, 3, 4, 6, 8, 16 | undefined | Assigns shadow with variable depths | Depths 5 and 7 don't exist
-title | node | undefined | Applies provided nodes as heading | -
-titleLevel | one of: 1, 2, 3, 4, 5, 6 | 1 | Sets title's heading level | Sets html elements `<h1>` through `<h6>`
-titleBorder | bool| undefined | Gives title container a border | -
-subtitle | node | undefined | Applies provided node as subtitle | -
-supporting | node | undefined | Applies provided node as supporting text | -
-media | node | undefined | Includes provided node in media container | -
-actions | node | undefined | Includes provided node in actions container | -
-actionsBorder | bool | undefined | Gives actions container a border | -
-menu | node | undefined | Includes provided node in menu container | Usually a mdl/mdr icon button plus menu
+shadow | one of: `2`, `3`, `4`, `6`, `8`,`16` | undefined | Assigns shadow with variable depths | Depths 5 and 7 don't exist
+title | node | undefined | Adds title text | -
+titleLevel | one of: `1`, `2`, `3`, `4`, `5`, `6` | `1` | Sets title's heading level | Sets html elements `<h1>` through `<h6>`
+titleBorder | bool| undefined | Adds border to title container | -
+subtitle | node | undefined | Adds subtitle | -
+supporting | node | undefined | Adds supporting text | -
+media | node | undefined | Adds media content | -
+actions | node | undefined | Adds actions | -
+actionsBorder | bool | undefined | Adds border to actions container | -
+menu | node | undefined | Adds menu | Usually a mdl/mdr icon button (plus menu)
 
 ## Children
 
