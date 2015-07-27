@@ -1,4 +1,5 @@
 import React from 'react';
+import paramCase from 'param-case';
 import mdlHook from '../lib/mdl-hook';
 
 @mdlHook({
@@ -28,7 +29,7 @@ import mdlHook from '../lib/mdl-hook';
     },
     {
       prop: 'miniFab',
-      className: 'mdl-button--mini-fab',
+      className: 'mdl-button--fab mdl-button--mini-fab',
       type: React.PropTypes.bool
     },
     {
@@ -48,8 +49,12 @@ import mdlHook from '../lib/mdl-hook';
     },
     {
       prop: 'display',
-      classNameFn: (val) => `mdl-button--${val}`,
-      type: React.PropTypes.oneOf(['raised', 'fab', 'fabMini', 'icon'])
+      classNameFn: (val) => {
+        return val === 'miniFab'
+          ? 'mdl-button--fab  mdl-button--mini-fab'
+          : `mdl-button--${val}`;
+      },
+      type: React.PropTypes.oneOf(['raised', 'fab', 'miniFab', 'icon'])
     }
   ]
 })
