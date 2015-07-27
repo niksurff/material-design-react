@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.1
+* Adds `rippleEffect` prop to `Button`
+* Fixes `miniFab` and `display="miniFab"` props on `Button`
+
 ## v0.2.0
 * Adds `Card` Components
 
