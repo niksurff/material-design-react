@@ -14,9 +14,11 @@ let myCard = (
       <Card.TitleText>
         A Title
       </Card.TitleText>
-      <Card.SubtitleText border>
+
+      <Card.SubtitleText>
         A subtitle
       </Card.SubtitleText>
+
     </Card.Title>
     {/* ... */}
   </Card>
