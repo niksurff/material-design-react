@@ -2,7 +2,7 @@ import React from 'react';
 import mdlHook from '../../lib/mdl-hook';
 
 @mdlHook({
-  displayName: 'MDRCardTitleText',
+  displayName: 'MDR:CardTitleText',
   blockClassName: 'mdl-card__title-text'
 })
 class CardTitleText extends React.Component {

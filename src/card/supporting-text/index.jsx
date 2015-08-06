@@ -2,7 +2,7 @@ import React from 'react';
 import mdlHook from '../../lib/mdl-hook';
 
 @mdlHook({
-  displayName: 'MDRCardSupportingText',
+  displayName: 'MDR:CardSupportingText',
   blockClassName: 'mdl-card__supporting-text'
 })
 class CardSupportingText extends React.Component {

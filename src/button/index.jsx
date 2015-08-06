@@ -2,7 +2,7 @@ import React from 'react';
 import mdlHook from '../lib/mdl-hook';
 
 @mdlHook({
-  displayName: 'MDRButton',
+  displayName: 'MDR:Button',
   blockClassName: 'mdl-button mdl-js-button',
   modifiers: [
     {

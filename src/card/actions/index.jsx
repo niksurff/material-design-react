@@ -2,7 +2,7 @@ import React from 'react';
 import mdlHook from '../../lib/mdl-hook';
 
 @mdlHook({
-  displayName: 'MDRCardActions',
+  displayName: 'MDR:CardActions',
   blockClassName: 'mdl-card__actions',
   modifiers: [
     {

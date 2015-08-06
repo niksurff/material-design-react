@@ -9,7 +9,7 @@ import CardSubtitleText from './subtitle-text';
 import CardSupportingText from './supporting-text';
 
 @mdlHook({
-  displayName: 'MDRCard',
+  displayName: 'MDR:Card',
   blockClassName: 'mdl-card mdl-js-card',
   modifiers: [
     {

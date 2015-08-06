@@ -2,7 +2,7 @@ import React from 'react';
 import mdlHook from '../../lib/mdl-hook';
 
 @mdlHook({
-  displayName: 'MDRCardMedia',
+  displayName: 'MDR:CardMedia',
   blockClassName: 'mdl-card__media'
 })
 class CardMedia extends React.Component {
