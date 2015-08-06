@@ -1,6 +1,8 @@
 # Material Design React (MDR)
 
-:warning: Work in progress. Updates rolling in every other day.
+:octocat:  
+:octocat: Seeking contributions &ndash; get a :coffee: and [read the guide](CONTRIBUTING.md), it's short!  
+:octocat:
 
 A *pragmatic* [React](https://github.com/facebook/react) implementation of [Material Design Lite](https://github.com/google/material-design-lite) (MDL).
 
@@ -46,7 +48,6 @@ Given MDL markup:
 
 ## Getting Started
 
-
 ### Installation
 
 npm:
@@ -82,9 +83,11 @@ var Button = MDR.Button;
 let coloredButton = <Button colored ripple>I am colored</Button>;
 ```
 
+
 ## Contributing
 
-*Coming soon*
+We welcome any contribution.  
+Please get started by reading [CONTRIBUTING.md](CONTRIBUTING.md)
 
 
 ## History
@@ -105,7 +108,7 @@ Have a look at the [changelog](CHANGELOG.md).
   - [x] [CardSupportingText](src/card/supporting-text/README.md)
   - [x] [CardActions](src/card/actions/README.md)
   - [x] [CardMenu](src/card/menu/README.md)
-- ...*coming*
+- ...*[Contribute!](https://github.com/nikvm/material-design-react/issues/4)*
 
 
 ## Credits
