@@ -26,15 +26,15 @@ class App extends React.Component {
   render() {
     return (
       <Examples>
-        <Button raised colored ripple>standard</Button>
-        <Button disabled>disabled</Button>
-        <Button colored raised>raised colored</Button>
-        <Button raised ripple>raised ripple</Button>
-        <Button display="raised">use prop display="raised"</Button>
-        <Button fab colored ripple><i className={'material-icons'}>add</i></Button>
-        <Button icon ripple><i className={'material-icons'}>add</i></Button>
-        <Button display="miniFab" colored><i className={'material-icons'}>add</i></Button>
-        <Button miniFab colored><i className={'material-icons'}>add</i></Button>
+        <Button raised colored ripple >standard</Button>
+        <Button disabled >disabled</Button>
+        <Button colored raised >raised colored</Button>
+        <Button raised ripple >raised ripple</Button>
+        <Button display="raised" >use prop display="raised"</Button>
+        <Button fab colored ripple ><i className={'material-icons'}>add</i></Button>
+        <Button icon ripple ><i className={'material-icons'}>add</i></Button>
+        <Button display="miniFab" colored ><i className={'material-icons'}>add</i></Button>
+        <Button miniFab colored ><i className={'material-icons'}>add</i></Button>
         <Button className="example-custom-red">Custom style</Button>
         <Card shadow="3">
           <Card.Title>
