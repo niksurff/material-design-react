@@ -29,8 +29,7 @@ export default function mdlHook({displayName, blockClassName, modifiers = []}) {
 
   let propTypes = makePropTypes(modifiers);
   let defaultProps = makeDefaultProps(modifiers);
-
-  let prepareTargetProps  = (props) => prepareProps(props, {
+  let prepareTargetProps = (props) => prepareProps(props, {
     blockClassName,
     modifierClassNameFns: makeClassNameFns(modifiers)
   });
@@ -76,8 +75,8 @@ export default function mdlHook({displayName, blockClassName, modifiers = []}) {
  * @return {Object}           propTypes object
  */
 function makePropTypes(modifiers) {
-  return modifiers.reduce((acc, cur) => {
-    acc[cur.prop] = cur.type;
+  return modifiers.reduce((acc, {prop, type}) => {
+    acc[prop] = type;
     return acc;
   }, {});
 }
@@ -102,9 +101,8 @@ function makeDefaultProps(modifiers) {
  * @return {Object}           classNameFns map
  */
 function makeClassNameFns(modifiers) {
-  return modifiers.reduce((acc, cur) => {
-    let {className, classNameFn} = cur;
-    acc[cur.prop] = className ? () => className : classNameFn;
+  return modifiers.reduce((acc, {prop, className, classNameFn}) => {
+    acc[prop] = className ? () => className : classNameFn;
     return acc;
   }, {});
 }
