@@ -29,31 +29,31 @@ export default function mdlHook({displayName, blockClassName, modifiers = []}) {
 
   let propTypes = makePropTypes(modifiers);
   let defaultProps = makeDefaultProps(modifiers);
-  let modifierClassNameFns = makeClassNameFns(modifiers);
+
+  let prepareTargetProps  = (props) => prepareProps(props, {
+    blockClassName,
+    modifierClassNameFns: makeClassNameFns(modifiers)
+  });
 
   return function decorator(Target) {
 
     return class extends React.Component {
-      static displayName = displayName
+      static displayName = displayName;
       static propTypes = propTypes;
-      static defaultProps = defaultProps
+      static defaultProps = defaultProps;
 
       constructor(props) {
         super(props);
+
         this.state = {
-          targetProps: prepareProps(
-            props,
-            {blockClassName, modifierClassNameFns}
-          )
+          targetProps: prepareTargetProps(props)
         };
       }
 
       componentWillReceiveProps(props) {
-        let targetProps = prepareProps(
-          props,
-          {blockClassName, modifierClassNameFns}
-        );
-        this.setState({targetProps});
+        this.setState({
+          targetProps: prepareTargetProps(props)
+        });
       }
 
       // credit: http://quaintous.com/2015/07/09/react-components-with-mdl/
