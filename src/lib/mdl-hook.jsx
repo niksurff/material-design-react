@@ -1,7 +1,6 @@
 import React from 'react';
 import prepareProps from './prepare-props';
 
-
 /**
  * # mdlHook
  *
@@ -26,29 +25,11 @@ import prepareProps from './prepare-props';
  * 4. `type`<Function>: One of React's `PropType`s (or custom)
  * 5. `default`<Any>: Default value (optional)
  */
-export default function mdlHook(config) {
-  let {displayName, blockClassName, modifiers = []} = config;
-  let propTypes = modifiers
-    .reduce((acc, cur) => {
-      acc[cur.prop] = cur.type;
-      return acc;
-    }, {});
+export default function mdlHook({displayName, blockClassName, modifiers = []}) {
 
-  let defaultProps = modifiers
-    .reduce((acc, cur) => {
-      if (cur.hasOwnProperty('default')) {
-        acc[cur.prop] = cur.default;
-      }
-      return acc;
-    }, {});
-
-  let modifierClassNameFns = modifiers
-    .reduce((acc, cur) => {
-      let {className, classNameFn} = cur;
-      acc[cur.prop] = className ? () => className : classNameFn;
-      return acc;
-    }, {});
-
+  let propTypes = makePropTypes(modifiers);
+  let defaultProps = makeDefaultProps(modifiers);
+  let modifierClassNameFns = makeClassNameFns(modifiers);
 
   return function decorator(Target) {
 
@@ -87,4 +68,43 @@ export default function mdlHook(config) {
       }
     };
   };
+}
+
+/**
+ * Creates an object mapping prop names to (React style) prop types
+ * @param  {Array} modifiers  List of modifier config objects
+ * @return {Object}           propTypes object
+ */
+function makePropTypes(modifiers) {
+  return modifiers.reduce((acc, cur) => {
+    acc[cur.prop] = cur.type;
+    return acc;
+  }, {});
+}
+
+/**
+ * Creates an object mapping prop names to default values
+ * @param  {Array} modifiers  List of modifier config objects
+ * @return {Object}           defaultProps objects
+ */
+function makeDefaultProps(modifiers) {
+  return modifiers.reduce((acc, cur) => {
+    if (cur.hasOwnProperty('default')) {
+      acc[cur.prop] = cur.default;
+    }
+    return acc;
+  }, {});
+}
+
+/**
+ * Creates an object mapping prop names to functions returning MDL class name
+ * @param  {Array} modifiers  List of modifier config objects
+ * @return {Object}           classNameFns map
+ */
+function makeClassNameFns(modifiers) {
+  return modifiers.reduce((acc, cur) => {
+    let {className, classNameFn} = cur;
+    acc[cur.prop] = className ? () => className : classNameFn;
+    return acc;
+  }, {});
 }
