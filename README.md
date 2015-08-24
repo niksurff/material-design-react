@@ -1,10 +1,8 @@
 # Material Design React (MDR)
 
-:octocat:  
-:octocat: Seeking contributions &ndash; get a :coffee: and [read the guide](CONTRIBUTING.md), it's short!  
-:octocat:
+:octocat: On break. Have a look at https://github.com/tleunen/react-mdl for a more complete implementation following similar goals.
 
-A *pragmatic* [React](https://github.com/facebook/react) implementation of [Material Design Lite](https://github.com/google/material-design-lite) (MDL).
+*Pragmatic* [React](https://github.com/facebook/react) wrapper for [Material Design Lite](https://github.com/google/material-design-lite) (MDL) components.
 
 
 ## Contents
