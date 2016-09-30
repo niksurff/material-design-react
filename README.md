@@ -1,6 +1,6 @@
-# Material Design React (MDR)
+# [DEPRECATED] Material Design React (MDR)
 
-:octocat: On break. Have a look at https://github.com/tleunen/react-mdl for a more complete implementation following similar goals.
+:octocat: repository preserved for historical reasons :octocat:
 
 *Pragmatic* [React](https://github.com/facebook/react) wrapper for [Material Design Lite](https://github.com/google/material-design-lite) (MDL) components.
 
