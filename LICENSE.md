@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2015 Niklas van Megen
+Copyright (c) 2015 The contributors listed at https://github.com/nikvm/material-design-react/graphs/contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
