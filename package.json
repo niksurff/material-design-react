@@ -19,7 +19,7 @@
     "react",
     "components"
   ],
-  "author": "Niklas van Megen (https://github.com/nikvm)",
+  "author": "nikvm <hi@nikvm.me> (https://nikvm.me)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nikvm/material-design-react/issues"
